@@ -1,0 +1,89 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#weatherform
+{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;  
+    background: rgb(58, 105, 225);
+    background: radial-gradient(
+      circle,
+      rgba(34, 25, 207, 0.633) 0%,
+      rgba(71, 66, 230, 0.841) 35%,
+      rgb(41, 22, 188) 100%
+    );
+}
+
+#form
+{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"]
+{
+    justify-self: center;
+    align-self: start;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    margin-top: 5px;
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus
+{
+    outline: none;
+}
+
+#searchBtn
+{
+    align-self: start;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    justify-self: center;
+    width: 70px;
+    margin-top: 5px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(102,153,204);
+    color: white;   
+    cursor: pointer;
+}
+
+#header1
+{
+    font-size: 2.7rem;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-self: right;
+    align-self: end;
+}
+#header2
+{
+    font-size: 2.7rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-left: 5px;
+    align-self: end;
+}
