@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/styleSearch.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/styleSearch.css" />
     <title>Weather App by MichU</title>
-</head>
-<body>  
+  </head>
+  <body>
     <div id="weatherform">
-        <div id="form">
-            <p id="header1">Weather</p><p id="header2">forecast</p>
-            <input type="text" placeholder="Enter city" id="cityform">
-            <button id="searchBtn" onclick="weatherApp()">Search</button>
-            <script src="/script/search.js"></script>
-        </div>
+      <div id="form">
+        <p id="header1">Weather</p>
+        <p id="header2">forecast</p>
+        <input
+          type="text"
+          placeholder="Enter city or post-code"
+          id="cityform"
+        />
+        <button id="searchBtn" onclick="weatherApp()">Search</button>
+        <div id="errordiv"></div>
+        <script src="/script/search.js"></script>
+      </div>
     </div>
     <div id="all">
-    <div class="container2">  
-        <p id=hourly>Hourly forecast</p>  
-        <div id="hourlyforecast">
-        </div>
-    </div>
-    <script src="/script/hourly-forecast.js"></script>
-    <div class="container">
-        <img src="" alt="" srcset="" id="weather-icon">
+      <div class="container2">
+        <p id="hourly">Hourly forecast</p>
+        <div id="hourlyforecast"></div>
+      </div>
+      <script src="/script/hourly-forecast.js"></script>
+      <div class="container">
+        <img src="" alt="" srcset="" id="weather-icon" />
         <div id="location">Unable to Fetch Weather</div>
         <div class="desc">No Information Available.</div>
         <div class="weather">
-            <div class="c">Error</div>
-            <div class="circle"></div>
-            <div class="f">Error</div>
+          <div class="c">Error</div>
+          <div class="circle"></div>
+          <div class="f">Error</div>
         </div>
         <div class="info">
-            <h4>Sunrise: <span class="sunrise">No Information Available</span></h4>
-            <h4>Sunset: <span class="sunset">No Information Available</span></h4>
+          <h4>
+            Sunrise: <span class="sunrise">No Information Available</span>
+          </h4>
+          <h4>Sunset: <span class="sunset">No Information Available</span></h4>
         </div>
-        <button id="change-city-btn" onclick="changeCity()">Change City</button>   
-    </div>
-    <script src="/script/main.js"></script> 
-    <script src="/script/search.js"></script>
-    <div class="container3"> 
+        <button id="change-city-btn" onclick="changeCity()">Change City</button>
+      </div>
+      <script src="/script/main.js"></script>
+      <script src="/script/search.js"></script>
+      <div class="container3">
         <p id="details">Weather details</p>
         <div id="moreinfo">
-            <div id="temperature_div"></div>
-            <div id="humidity_div"></div>
-            <div id="wind_div"></div>
-            <div id="pressure_div"></div>  
+          <div id="temperature_div"></div>
+          <div id="humidity_div"></div>
+          <div id="wind_div"></div>
+          <div id="pressure_div"></div>
         </div>
-    </div>
-    <script src="/script/more-info.js"></script>
-    <div id="footer">
+      </div>
+      <script src="/script/more-info.js"></script>
+      <div id="footer">
         <div id="copyright">
-            <p>© 2023 MichU All Rights Reserved</p>
+          <p>© 2023 MichU All Rights Reserved</p>
         </div>
         <div id="clock">
-            <p id="clockp"></p>
+          <p id="clockp"></p>
         </div>
+      </div>
     </div>
-</div>  
-</body>
+  </body>
 </html>
