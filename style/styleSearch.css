@@ -1,27 +1,25 @@
-* {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1d22;
   margin: 0;
-  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #e6eaf0;
+}
+
+* {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: white;
-}
-
 #weatherform {
-  z-index: 2;
-  position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
-  background: rgb(58, 105, 225);
-  background: radial-gradient(
-    circle,
-    rgba(34, 25, 207, 0.633) 0%,
-    rgba(71, 66, 230, 0.841) 35%,
-    rgb(41, 22, 188) 100%
-  );
+  background: #1a1d22;
 }
 
 #form {
@@ -42,6 +40,8 @@ input[type="text"] {
   border: none;
   height: 20px;
   border-radius: 5px;
+  background-color: #363c42;
+  color: #e6eaf0;
 }
 
 input[type="text"]:focus {
@@ -59,8 +59,8 @@ input[type="text"]:focus {
   height: 20px;
   border-radius: 20px;
   border: none;
-  background-color: rgb(102, 153, 204);
-  color: white;
+  background-color: #007bff;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -81,6 +81,7 @@ input[type="text"]:focus {
   justify-self: right;
   align-self: end;
 }
+
 #header2 {
   font-size: 2.7rem;
   grid-column-start: 3;
