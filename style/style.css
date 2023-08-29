@@ -2,7 +2,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: #1a1d22;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -14,8 +13,8 @@ body {
 }
 
 .container {
-  height: 90vh;
-  width: 33vw;
+  min-height: 90vh;
+  width: 33%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,20 +62,19 @@ body {
 }
 
 .container2 {
-  height: 90vh;
-  width: 33vw;
+  min-height: 90vh;
+  width: 33%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
 }
 
 .container3 {
-  height: 90vh;
-  width: 33vw;
+  min-height: 90vh;
+  width: 33%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,14 +89,18 @@ body {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   background: #1a1d22;
+  width: 100%;
+  height: 100%;
 }
 
 #hourlyforecast {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-auto-rows: 150px;
+  grid-auto-rows: 10rem;
+  column-gap: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   font-size: 0.9rem;
@@ -114,7 +116,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-auto-rows: 150px;
+  grid-auto-rows: 10rem;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.2rem;
@@ -189,6 +191,7 @@ body {
 
 #footer {
   display: flex;
+  align-self: flex-end;
   height: 10vh;
   width: 100%;
   color: #e6eaf0;
@@ -209,4 +212,115 @@ body {
   width: 50%;
   font-size: 4vh;
   font-style: italic;
+}
+
+@media (max-width: 1080px) {
+  #all {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .container,
+  .container2,
+  .container3,
+  #footer {
+    flex: 1;
+    width: 100%;
+  }
+
+  .container {
+    order: 1;
+  }
+
+  .container2 {
+    order: 2;
+  }
+
+  .container3 {
+    order: 3;
+  }
+
+  #footer {
+    order: 4;
+  }
+
+  #hourlyforecast {
+    grid-template-columns: repeat(4, 25%);
+    column-width: 40%;
+    column-gap: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  #all {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .container,
+  .container2,
+  .container3,
+  #footer {
+    flex: 1;
+    width: 100%;
+  }
+
+  .container {
+    order: 1;
+  }
+
+  .container2 {
+    order: 2;
+  }
+
+  .container3 {
+    order: 3;
+  }
+
+  #footer {
+    order: 4;
+  }
+
+  #hourlyforecast {
+    grid-template-columns: repeat(2, 50%);
+    column-width: 40%;
+    column-gap: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  #all {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .container,
+  .container2,
+  .container3,
+  #footer {
+    flex: 1;
+    width: 100%;
+  }
+
+  .container {
+    order: 1;
+  }
+
+  .container2 {
+    order: 2;
+  }
+
+  .container3 {
+    order: 3;
+  }
+
+  #footer {
+    order: 4;
+  }
+
+  #hourlyforecast {
+    grid-template-columns: repeat(2, 50%);
+    column-width: 40%;
+    column-gap: 10%;
+  }
 }

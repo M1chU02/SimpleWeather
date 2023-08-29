@@ -23,10 +23,9 @@ function weatherApp() {
         let input = document.getElementById("cityform");
         location.reload;
         input.value = "";
-        const error_msg = document.createElement("p");
-        error_msg.innerHTML = "Wrong location";
-        const error_div = document.getElementById("errordiv");
-        error_div.appendChild(error_msg);
+        let errortxt = document.getElementById("errortxt");
+        errortxt.innerHTML = "";
+        errortxt.innerHTML = "Wrong location";
       }
     });
 }
@@ -45,4 +44,8 @@ document.querySelector("#form").addEventListener("keypress", function (e) {
     event.preventDefault();
     weatherApp();
   }
+});
+
+window.addEventListener("load", () => {
+  document.getElementById("cityform").focus();
 });

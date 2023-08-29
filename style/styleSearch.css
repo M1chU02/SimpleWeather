@@ -17,9 +17,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
   background: #1a1d22;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #form {
@@ -74,18 +77,19 @@ input[type="text"]:focus {
   color: red;
 }
 
+#headerdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
 #header1 {
-  font-size: 2.7rem;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  justify-self: right;
-  align-self: end;
+  font-size: 2.5rem;
 }
 
 #header2 {
-  font-size: 2.7rem;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  padding-left: 5px;
-  align-self: end;
+  font-size: 2.5rem;
+  margin-left: 7px;
 }

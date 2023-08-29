@@ -11,15 +11,17 @@
   <body>
     <div id="weatherform">
       <div id="form">
-        <p id="header1">Weather</p>
-        <p id="header2">forecast</p>
+        <div id="headerdiv">
+          <p id="header1">Weather</p>
+          <p id="header2">forecast</p>
+        </div>
         <input
           type="text"
           placeholder="Enter city or post-code"
           id="cityform"
         />
         <button id="searchBtn" onclick="weatherApp()">Search</button>
-        <div id="errordiv"></div>
+        <div id="errordiv"><p id="errortxt"></p></div>
         <script src="/script/search.js"></script>
       </div>
     </div>
@@ -57,15 +59,15 @@
           <div id="pressure_div"></div>
         </div>
       </div>
-      <script src="/script/more-info.js"></script>
       <div id="footer">
-        <div id="copyright">
-          <p>© 2023 MichU All Rights Reserved</p>
-        </div>
         <div id="clock">
           <p id="clockp"></p>
         </div>
+        <div id="copyright">
+          <p>© 2023 MichU All Rights Reserved</p>
+        </div>
       </div>
+      <script src="/script/more-info.js"></script>
     </div>
   </body>
 </html>
