@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style/style.css" />
     <link rel="stylesheet" href="/style/styleSearch.css" />
+    <link rel="stylesheet" href="style/responsive-style.css" />
     <title>Weather App by MichU</title>
   </head>
   <body>
+    <div id="cookie-consent" class="cookie-consent">
+      <p>
+        This website uses cookies to improve your experience. By using this
+        website, you consent to the use of cookies.
+      </p>
+      <button id="accept-cookies">Accept</button>
+    </div>
     <div id="weatherform">
       <div id="form">
         <div id="headerdiv">
@@ -23,6 +31,10 @@
         <button id="searchBtn" onclick="weatherApp()">Search</button>
         <div id="errordiv"><p id="errortxt"></p></div>
         <script src="/script/search.js"></script>
+      </div>
+      <div id="recent-searches">
+        <h2>Last Searched Locations</h2>
+        <ul id="recent-search-list"></ul>
       </div>
     </div>
     <div id="all">
@@ -49,7 +61,6 @@
         <button id="change-city-btn" onclick="changeCity()">Change City</button>
       </div>
       <script src="/script/main.js"></script>
-      <script src="/script/search.js"></script>
       <div class="container3">
         <p id="details">Weather details</p>
         <div id="moreinfo">
@@ -68,6 +79,8 @@
         </div>
       </div>
       <script src="/script/more-info.js"></script>
+      <script src="/script/cookies.js"></script>
+      <script src="/script/last-searched.js"></script>
     </div>
   </body>
 </html>

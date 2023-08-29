@@ -1,4 +1,4 @@
-const api = "3d0e75b1809f78f44935c36ada7b307f";
+api = "3d0e75b1809f78f44935c36ada7b307f";
 function weatherApp() {
   var cityForm = document.getElementById("cityform").value;
   const base = `https://api.openweathermap.org/data/2.5/weather?q=${cityForm}&appid=${api}&units=metric`;
@@ -15,6 +15,7 @@ function weatherApp() {
         main(cityForm, api);
         hour(cityForm, api);
         more(cityForm, api);
+        timeline(cityForm);
         var mainbody = document.getElementById("all");
         var formbody = document.getElementById("weatherform");
         mainbody.style.visibility = "visible";
@@ -39,10 +40,11 @@ function changeCity() {
   more(cityinput, api);
 }
 
-document.querySelector("#form").addEventListener("keypress", function (e) {
+document.querySelector("#cityform").addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
-    event.preventDefault();
+    e.preventDefault();
     weatherApp();
+    console.log("asdasdd");
   }
 });
 

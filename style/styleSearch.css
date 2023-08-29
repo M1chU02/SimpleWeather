@@ -17,12 +17,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  max-width: 800px;
+  flex-direction: column;
   background: #1a1d22;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 #form {
@@ -31,6 +27,7 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 input[type="text"] {
@@ -41,7 +38,8 @@ input[type="text"] {
   grid-row-start: 2;
   margin-top: 5px;
   border: none;
-  height: 20px;
+  min-width: 200px;
+  height: 30px;
   border-radius: 5px;
   background-color: #363c42;
   color: #e6eaf0;
@@ -57,14 +55,18 @@ input[type="text"]:focus {
   grid-column-end: 5;
   grid-row-start: 2;
   justify-self: center;
-  width: 70px;
+  width: 80px;
   margin-top: 5px;
-  height: 20px;
+  height: 30px;
   border-radius: 20px;
   border: none;
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
+}
+
+#searchBtn:hover {
+  background-color: #0056b3;
 }
 
 #errordiv {
@@ -80,16 +82,70 @@ input[type="text"]:focus {
 #headerdiv {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   grid-column-start: 1;
   grid-column-end: 5;
+  margin-top: 10px;
 }
 
 #header1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 #header2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-left: 7px;
+}
+
+#recent-searches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #1a1d22;
+}
+
+#recent-search-list {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.recent-search-item {
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  padding: 5px;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2px;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#recent-search-heading {
+  font-size: 1.2rem;
+  color: #e6eaf0;
+  margin-bottom: 10px;
+}
+
+.recent-search-item:hover {
+  cursor: pointer;
+  background-color: #0056b3;
+}
+
+.list-element-icon {
+  width: 40px;
+  height: 40px;
 }
