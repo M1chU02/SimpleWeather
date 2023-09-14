@@ -11,8 +11,8 @@ Welcome to the Simple Weather App for Browsers repository! This lightweight, one
 ## Getting Started
 To get started with the Simple Weather App, simply open the app in your favorite browser. There's no need to install anything. Here's how:
 
-1. [Visit the Weather App](www.weather.justmichu.pl)
-2. Enter your location or allow the app to access your current location.
+1. [Visit the Weather App](http://www.weather.justmichu.pl)
+2. Enter your location.
 3. Voilà! You'll receive the latest weather forecast for your area.
 
 ## Feedback and Contributions
