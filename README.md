@@ -16,7 +16,7 @@ To get started with the Simple Weather App, simply open the app in your favorite
 3. Voilà! You'll receive the latest weather forecast for your area.
 
 ## Feedback and Contributions
-I'm actively working on improving this weather app based on user feedback. If you encounter any issues, have suggestions, or want to contribute, please feel free to [open an issue](https://github.com/yourusername/weather-app/issues) or [submit a pull request](https://github.com/yourusername/weather-app/pulls). Your input is highly appreciated!
+I'm actively working on improving this weather app based on user feedback. If you encounter any issues, have suggestions, or want to contribute, please feel free to [open an issue](https://github.com/M1chU02/SimpleWeather/issues) or [submit a pull request](https://github.com/M1chU02/SimpleWeather/pulls). Your input is highly appreciated!
 
 ## Roadmap
 I have exciting plans for future releases of the Simple Weather App. Here's a glimpse of what's coming:
@@ -25,9 +25,6 @@ I have exciting plans for future releases of the Simple Weather App. Here's a gl
 - Historical weather data for research and planning.
 
 Stay tuned for updates! 🚀
-
-## License
-This project is licensed under the [MIT License](LICENSE), so feel free to use, modify, and distribute it as you see fit.
 
 ---
 
