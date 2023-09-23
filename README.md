@@ -26,6 +26,9 @@ I have exciting plans for future releases of the Simple Weather App. Here's a gl
 
 Stay tuned for updates! 🚀
 
+## License
+This project is licensed under the [MIT License](https://opensource.org/license/mit/), so feel free to use, modify, and distribute it as you see fit.
+
 ---
 
 Enjoy hassle-free weather forecasts with our basic browser app! 🌤️🌈
