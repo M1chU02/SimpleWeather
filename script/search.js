@@ -1,4 +1,4 @@
-const api = '3d0e75b1809f78f44935c36ada7b307f';
+const api = '';
 function weatherApp()
 {
     var cityForm = document.getElementById("cityform").value;
